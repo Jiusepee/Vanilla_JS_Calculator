@@ -38,9 +38,8 @@ backspace.addEventListener("click", () => {
 // Precent Button
 precent.addEventListener("click", () => {
     h2.innerText = h2.innerText + "%";
-})
-console.log(precent);
-
+    h2.innerText = h2.innerText.replace("%", "/100");
+});
 
 // Divide Button
 divide.addEventListener("click", () => {

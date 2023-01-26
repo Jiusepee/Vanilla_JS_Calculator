@@ -9,6 +9,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #242038 !important;
 }
 #container{
     height: 60%;
@@ -16,6 +17,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width: 1080px) {
+    #container{
+        height: 100%;
+        width: 100%;
+    }
+    #buttons > div > button{
+       font-size: 9em !important;
+       font-weight: bolder;
+    }
+    #input > h2{
+        font-size: 9rem !important;
+    }
 }
 #changethis{
     height:100%;
@@ -44,6 +58,10 @@ h2{
 #buttons{
     height: 85%;
     width: 100%;
+}
+#buttons > div > button{
+    font-weight: bolder;
+    font-size: 2em;
 }
 #row1, #row2, #row3, #row4, #row5{
     height: 20%;
